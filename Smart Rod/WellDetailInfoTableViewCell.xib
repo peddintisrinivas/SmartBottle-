@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WellDetailInfoCell" id="KGk-i7-Jjw" customClass="WellDetailInfoTableViewCell" customModule="Smart_Rod" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0WX-1e-aQt" userLabel="BGView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GD2-QO-nch" userLabel="middleview">
+                                <rect key="frame" x="160" y="10" width="1" height="23"/>
+                                <color key="backgroundColor" red="0.37254901960784315" green="0.36862745098039218" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="jZ5-Ch-6j1"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9BL-Ji-Lzw" userLabel="key">
+                                <rect key="frame" x="20" y="5" width="130" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNw-Xo-IZv" userLabel="value">
+                                <rect key="frame" x="181" y="5" width="129" height="33"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9BL-Ji-Lzw" firstAttribute="top" secondItem="0WX-1e-aQt" secondAttribute="top" constant="5" id="0LW-HC-owj"/>
+                            <constraint firstItem="PNw-Xo-IZv" firstAttribute="top" secondItem="0WX-1e-aQt" secondAttribute="top" constant="5" id="2E7-2e-oBi"/>
+                            <constraint firstAttribute="bottom" secondItem="9BL-Ji-Lzw" secondAttribute="bottom" constant="5" id="A42-bY-uxs"/>
+                            <constraint firstItem="PNw-Xo-IZv" firstAttribute="leading" secondItem="GD2-QO-nch" secondAttribute="trailing" constant="20" id="NBO-aC-5tf"/>
+                            <constraint firstAttribute="bottom" secondItem="GD2-QO-nch" secondAttribute="bottom" constant="10" id="U3P-Rs-nhA"/>
+                            <constraint firstItem="GD2-QO-nch" firstAttribute="leading" secondItem="9BL-Ji-Lzw" secondAttribute="trailing" constant="10" id="ZB0-o4-wRV"/>
+                            <constraint firstItem="GD2-QO-nch" firstAttribute="top" secondItem="0WX-1e-aQt" secondAttribute="top" constant="10" id="elb-Es-09O"/>
+                            <constraint firstItem="9BL-Ji-Lzw" firstAttribute="leading" secondItem="0WX-1e-aQt" secondAttribute="leading" constant="20" id="hrS-aJ-R8V"/>
+                            <constraint firstItem="GD2-QO-nch" firstAttribute="centerX" secondItem="0WX-1e-aQt" secondAttribute="centerX" id="jMQ-AJ-E6y"/>
+                            <constraint firstAttribute="trailing" secondItem="PNw-Xo-IZv" secondAttribute="trailing" constant="10" id="pbZ-PH-426"/>
+                            <constraint firstAttribute="bottom" secondItem="PNw-Xo-IZv" secondAttribute="bottom" constant="5" id="rcw-2f-EjN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0WX-1e-aQt" secondAttribute="trailing" id="KWY-kD-BZV"/>
+                    <constraint firstItem="0WX-1e-aQt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hje-rP-wyS"/>
+                    <constraint firstAttribute="bottom" secondItem="0WX-1e-aQt" secondAttribute="bottom" id="tTP-oo-QIC"/>
+                    <constraint firstItem="0WX-1e-aQt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xzq-p8-cQE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellBGView" destination="0WX-1e-aQt" id="KAm-IY-y8g"/>
+                <outlet property="cellSeperatorView" destination="GD2-QO-nch" id="ye8-CJ-gOW"/>
+                <outlet property="keyLabel" destination="9BL-Ji-Lzw" id="t5N-II-6cw"/>
+                <outlet property="valueLabel" destination="PNw-Xo-IZv" id="ZaX-dm-nsE"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
